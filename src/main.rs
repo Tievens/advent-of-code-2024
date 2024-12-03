@@ -41,6 +41,19 @@ fn main() {
                         _ => { panic!("What part?") }
                     }
                 }
+                "day03" => {
+                    match part {
+                        "1" => {
+                            let result = day03::solve1(data);
+                            println!("{}", result);
+                        }
+                        "2" => {
+                            let result = day03::solve2(data);
+                            println!("{}", result);
+                        }
+                        _ => { panic!("What part?") }
+                    }
+                }
                 _ => { panic!("Invalid argument") }
             }
         }
